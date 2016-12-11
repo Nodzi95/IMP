@@ -1,8 +1,8 @@
 /*******************************************************************************
-   main.c: LCD + keyboard demo
+   main.c: Klavír
    Copyright (C) 2012 Brno University of Technology,
                       Faculty of Information Technology
-   Author(s): Michal Bidlo <bidlom AT fit.vutbr.cz>
+   Author(s): Petr Nodžák <xnodza00 AT fit.vutbr.cz>
 
    LICENSE TERMS
 
