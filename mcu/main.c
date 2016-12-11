@@ -154,6 +154,17 @@ void CDURA(){
 	CCR0 = 0x0025;
 	times = 220;
 }
+/*CDUR A*/
+void CDURH(){
+	//LCD_append_char('A');
+	flipit = 1;
+	count = 0;
+	TACTL = TASSEL_1 + MC_2;
+	TAR = 0x0000;
+	prirustek = 0x0023;
+	CCR0 = 0x0023;
+	times = 233;
+}
 /*CDUR C2*/
 void CDURC2(){
 	//LCD_append_char('C2');
@@ -597,7 +608,11 @@ void note(char ch){
       		LCD_append_char('A');
       		CDURA();
       	}
-      	else if(ch == '7'){
+	else if(ch == '7'){
+		LCD_append_char('H');
+		CDURH();
+	}
+      	else if(ch == '8'){
       		LCD_append_char('C');
       		LCD_append_char('\'');
       		CDURC2();
