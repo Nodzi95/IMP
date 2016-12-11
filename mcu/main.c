@@ -75,6 +75,8 @@ void fpga_initialized()
 {
 }
 
+
+/*pauza vhodná pro vložení mezi tóny*/
 void MS100(int t){
 	//LCD_append_char(' ');
 	flipit = 0;
@@ -86,6 +88,7 @@ void MS100(int t){
 	times = t;
 }
 
+/*CDUR C*/
 void CDURC(){
 	//LCD_append_char('C');
 	flipit = 1;  
@@ -96,6 +99,7 @@ void CDURC(){
 	CCR0 = 0x003F;
 	times = 131;
 }
+/*CDUR D*/
 void CDURD(){ 
 	//LCD_append_char('D');
 	flipit = 1;
@@ -106,6 +110,7 @@ void CDURD(){
 	CCR0 = 0x0038;
 	times = 147;
 }
+/*CDUR E*/
 void CDURE(){
 	//LCD_append_char('E');
 	flipit = 1;
@@ -116,6 +121,7 @@ void CDURE(){
 	CCR0 = 0x0032;
 	times = 165;
 }
+/*CDUR F*/
 void CDURF(){
 	//LCD_append_char('F');
 	flipit = 1;
@@ -126,6 +132,7 @@ void CDURF(){
 	CCR0 = 47;
 	times = 175;
 }
+/*CDUR G*/
 void CDURG(){
 	//LCD_append_char('G');
 	flipit = 1;
@@ -136,6 +143,7 @@ void CDURG(){
 	CCR0 = 0x002A;
 	times = 196;
 }
+/*CDUR A*/
 void CDURA(){
 	//LCD_append_char('A');
 	flipit = 1;
@@ -146,6 +154,7 @@ void CDURA(){
 	CCR0 = 0x0025;
 	times = 220;
 }
+/*CDUR C2*/
 void CDURC2(){
 	//LCD_append_char('C2');
 	flipit = 1;
@@ -157,6 +166,7 @@ void CDURC2(){
 	times = 247;
 }
 
+/*hraní písničky, rešené aktivním čekáním*/
 void strar_wars(){
 	notes = -1;
 	if(notes == -1){
@@ -330,6 +340,203 @@ void strar_wars(){
 	}
 }
 
+skakal_pes(){
+	notes = -1;
+	if(notes == -1){
+		MS100(1);
+		while(1){
+			if(notes == 0) break;
+		}
+	}
+
+	/*GGE SKÁ-KAL PES*/
+	if(notes == 0){
+		CDURG();
+		while(1){
+			if(notes == 1) break;
+		}
+	}
+	if(notes == 1){
+		CDURG();
+		while(1){
+			if(notes == 2) break;
+		}
+	}
+	if(notes == 2){
+		CDURE();
+		while(1){
+			if(notes == 3) break;
+		}
+	}
+	if(notes == 3){
+		MS100(1);
+		while(1){
+			if(notes == 4) break;
+		}
+	}
+
+	/*GGE PŘES O - VES*/
+	if(notes == 4){
+		CDURG();
+		while(1){
+			if(notes == 5) break;
+		}
+	}
+	if(notes == 5){
+		CDURG();
+		while(1){
+			if(notes == 6) break;
+		}
+	}
+	if(notes == 6){
+		CDURE();
+		while(1){
+			if(notes == 7) break;
+		}
+	}
+	if(notes == 7){
+		MS100(1);
+		while(1){
+			if(notes == 8) break;
+		}
+	}
+
+	/*GGAGGF PŘES ZE - LE-NOU LOU-KU*/
+	if(notes == 8){
+		CDURG();
+		while(1){
+			if(notes == 9) break;
+		}
+	}
+	if(notes == 9){
+		CDURG();
+		while(1){
+			if(notes == 10) break;
+		}
+	}
+	if(notes == 10){
+		CDURA();
+		while(1){
+			if(notes == 11) break;
+		}
+	}
+	if(notes == 11){
+		CDURG();
+		while(1){
+			if(notes == 12) break;
+		}
+	}
+	if(notes == 12){
+		CDURG();
+		while(1){
+			if(notes == 13) break;
+		}
+	}
+	if(notes == 13){
+		CDURF();
+		while(1){
+			if(notes == 14) break;
+		}
+	}
+	if(notes == 14){
+		MS100(1);
+		while(1){
+			if(notes == 15) break;
+		}
+	}
+
+	/*FFD- ŠEL ZA NÍM-PAUZA*/
+	if(notes == 15){
+		CDURF();
+		while(1){
+			if(notes == 16) break;
+		}
+	}
+	if(notes == 16){
+		CDURF();
+		while(1){
+			if(notes == 17) break;
+		}
+	}
+	if(notes == 17){
+		CDURD();
+		while(1){
+			if(notes == 18) break;
+		}
+	}
+	if(notes == 18){
+		MS100(1);
+		while(1){
+			if(notes == 19) break;
+		}
+	}
+
+	/*FFD- MYS-LI VEC-PAUZA*/
+	if(notes == 19){
+		CDURF();
+		while(1){
+			if(notes == 20) break;
+		}
+	}
+	if(notes == 20){
+		CDURF();
+		while(1){
+			if(notes == 21) break;
+		}
+	}
+	if(notes == 21){
+		CDURD();
+		while(1){
+			if(notes == 22) break;
+		}
+	}
+	if(notes == 22){
+		MS100(1);
+		while(1){
+			if(notes == 23) break;
+		}
+	}
+
+	/*FFGFFE PÉ-RO NA KLO-BOU-KU*/
+	if(notes == 23){
+		CDURF();
+		while(1){
+			if(notes == 24) break;
+		}
+	}
+	if(notes == 24){
+		CDURF();
+		while(1){
+			if(notes == 25) break;
+		}
+	}
+	if(notes == 25){
+		CDURG();
+		while(1){
+			if(notes == 26) break;
+		}
+	}
+	if(notes == 26){
+		CDURF();
+		while(1){
+			if(notes == 27) break;
+		}
+	}
+	if(notes == 27){
+		CDURF();
+		while(1){
+			if(notes == 28) break;
+		}
+	}
+	if(notes == 28){
+		CDURE();
+		while(1){
+			if(notes == 29) break;
+		}
+	}
+}
+
+/*výběr písničky*/
 void print_song(int i){
 	term_send_str("SONG: ");
 	if(i == 0){
@@ -342,16 +549,28 @@ void print_song(int i){
 		LCD_append_char('A');
 		LCD_append_char('R');
 		LCD_append_char('S');
-		strar_wars();
+		strar_wars();	//samotné hraní písničky
 	}
 	else if(i == 1){
-		term_send_str("SONG B");
+		LCD_append_char('S');
+		LCD_append_char('K');
+		LCD_append_char('A');
+		LCD_append_char('K');
+		LCD_append_char('A');
+		LCD_append_char('L');
+		LCD_append_char(' ');
+		LCD_append_char('P');
+		LCD_append_char('E');
+		LCD_append_char('S');
+		skakal_pes();
 	}
 }
+
 void print_hlaska(){
 	term_send_str("UNSUPPORTED KEY");
 }
 
+/*podle stisknuté klávesnic se provede akce*/
 void note(char ch){
 	count = 0;
 	  	if(ch == '1'){
@@ -397,8 +616,7 @@ void note(char ch){
       	//count++;
 	}
 	
-
-
+/*obsluha klávesnice*/
 int keyboard_idle(){
   	char ch;
   	ch = key_decode(read_word_keyboard_4x4());
@@ -412,6 +630,7 @@ int keyboard_idle(){
   	return 0;
 }
 
+/*hlavní funkce*/
 int main(void)
 {
   char_cnt = 0;

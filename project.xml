@@ -2,11 +2,11 @@
 <project outputprefix="kblcd">
 
     <!--  Project description -->
-    <name>Řízení klávesnice a LCD z MCU</name>
-    <author>Michal Bidlo</author>
-    <authoremail>bidlom@fit.vutbr.cz</authoremail>
+    <name>Klavír</name>
+    <author>Petr Nodžák</author>
+    <authoremail>xnodza00@stud.fit.vutbr.cz</authoremail>
     <revision>20121014</revision>
-    <description>Psaní na LCD pomocí klávesnice FITkitu řízené z MSP430.</description>
+    <description>Hraní stupnice CDUR pomocí klávesnice a repráčku</description>
 
     <!--  MCU part -->
     <mcu>
