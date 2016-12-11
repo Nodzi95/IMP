@@ -1,7 +1,7 @@
-INFILE=/home/petr/Dokumenty/FITkit/FITkit-svn/apps/demo_imp/keyb_lcd/build/fpga/kblcd.par.ncd
-OUTFILE=/home/petr/Dokumenty/FITkit/FITkit-svn/apps/demo_imp/keyb_lcd/build/kblcd.bit
+INFILE=C:\FitkitSVN\apps\demo_imp\klavir\build\fpga\kblcd.par.ncd
+OUTFILE=C:\FitkitSVN\apps\demo_imp\klavir\build\kblcd.bit
 FAMILY=Spartan3
 PART=xc3s50-4pq208
-WORKINGDIR=/home/petr/Dokumenty/FITkit/FITkit-svn/apps/demo_imp/keyb_lcd/build
+WORKINGDIR=C:\FitkitSVN\apps\demo_imp\klavir\build
 LICENSE=WebPack
-USER_INFO=211031359_0_0_052
+USER_INFO=211031359_0_0_551

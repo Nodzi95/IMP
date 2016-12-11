@@ -1,14 +1,14 @@
-Release 14.7 par P.20131013 (lin64)
+Release 14.7 par P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-petr-Lenovo-IdeaPad-Y570::  Thu Nov 10 15:58:09 2016
+FITKIT-PC::  Sun Dec 11 15:49:45 2016
 
 par -w -ol std build/fpga/kblcd.map.ncd build/fpga/kblcd.par.ncd
 build/fpga/kblcd.pcf 
 
 
 Constraints file: build/fpga/kblcd.pcf.
-Loading device for application Rf_Device from file '3s50.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+Loading device for application Rf_Device from file '3s50.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
    "fpga" is an NCD, version 3.2, device xc3s50, package pq208, speed -4
 INFO:Par:469 - Although the Overall Effort Level (-ol) for this implementation has been set to Standard, Placer will run
    at effort level High. To override this, please set the Placer Effort Level (-pl) to Standard.
@@ -37,8 +37,8 @@ Placer effort level (-pl):    High
 Placer cost table entry (-t): 1
 Router effort level (-rl):    Standard 
 
-Starting initial Timing Analysis.  REAL time: 1 secs 
-Finished initial Timing Analysis.  REAL time: 1 secs 
+Starting initial Timing Analysis.  REAL time: 59 secs 
+Finished initial Timing Analysis.  REAL time: 59 secs 
 
 WARNING:Par:288 - The signal ACLK_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal FCLK_IBUF has no load.  PAR will not attempt to route this signal.
@@ -46,41 +46,41 @@ WARNING:Par:288 - The signal SPI_CS_IBUF has no load.  PAR will not attempt to r
 WARNING:Par:288 - The signal X<4>_IBUF has no load.  PAR will not attempt to route this signal.
 
 Starting Placer
-Total REAL time at the beginning of Placer: 1 secs 
-Total CPU  time at the beginning of Placer: 1 secs 
+Total REAL time at the beginning of Placer: 59 secs 
+Total CPU  time at the beginning of Placer: 0 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:54aa0acb) REAL time: 1 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:54aa0acb) REAL time: 59 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:54aa0acb) REAL time: 1 secs 
+Phase 2.7  Design Feasibility Check (Checksum:54aa0acb) REAL time: 59 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:54aa0acb) REAL time: 1 secs 
+Phase 3.31  Local Placement Optimization (Checksum:54aa0acb) REAL time: 59 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 
-Phase 4.2  Initial Clock and IO Placement (Checksum:59a533ab) REAL time: 1 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:59a533ab) REAL time: 59 secs 
 
 Phase 5.36  Local Placement Optimization
-Phase 5.36  Local Placement Optimization (Checksum:59a533ab) REAL time: 1 secs 
+Phase 5.36  Local Placement Optimization (Checksum:59a533ab) REAL time: 59 secs 
 
 Phase 6.8  Global Placement
 ..
 ..
-Phase 6.8  Global Placement (Checksum:8f41c89) REAL time: 2 secs 
+Phase 6.8  Global Placement (Checksum:8f41c89) REAL time: 1 mins 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:8f41c89) REAL time: 2 secs 
+Phase 7.5  Local Placement Optimization (Checksum:8f41c89) REAL time: 1 mins 
 
 Phase 8.18  Placement Optimization
-Phase 8.18  Placement Optimization (Checksum:105453a7) REAL time: 3 secs 
+Phase 8.18  Placement Optimization (Checksum:105453a7) REAL time: 1 mins 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:105453a7) REAL time: 3 secs 
+Phase 9.5  Local Placement Optimization (Checksum:105453a7) REAL time: 1 mins 
 
-Total REAL time to Placer completion: 3 secs 
-Total CPU  time to Placer completion: 2 secs 
+Total REAL time to Placer completion: 1 mins 
+Total CPU  time to Placer completion: 1 secs 
 Writing design to file build/fpga/kblcd.par.ncd
 
 
@@ -88,26 +88,26 @@ Writing design to file build/fpga/kblcd.par.ncd
 Starting Router
 
 
-Phase  1  : 675 unrouted;      REAL time: 3 secs 
+Phase  1  : 675 unrouted;      REAL time: 1 mins 
 
-Phase  2  : 607 unrouted;      REAL time: 3 secs 
+Phase  2  : 607 unrouted;      REAL time: 1 mins 
 
-Phase  3  : 175 unrouted;      REAL time: 3 secs 
+Phase  3  : 175 unrouted;      REAL time: 1 mins 
 
-Phase  4  : 175 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  4  : 175 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
 Updating file: build/fpga/kblcd.par.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 
 
-Total REAL time to Router completion: 3 secs 
-Total CPU time to Router completion: 3 secs 
+Total REAL time to Router completion: 1 mins 
+Total CPU time to Router completion: 1 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -178,10 +178,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 4 secs 
-Total CPU time to PAR completion: 3 secs 
+Total REAL time to PAR completion: 1 mins 1 secs 
+Total CPU time to PAR completion: 2 secs 
 
-Peak Memory Usage:  510 MB
+Peak Memory Usage:  212 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

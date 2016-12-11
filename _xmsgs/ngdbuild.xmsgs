@@ -11,7 +11,7 @@
 <msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD=6 MHz HIGH 50%;&gt; [../../..//fpga/chips/fpga_xc3s50.ucf(135)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="470" delta="new" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">X&lt;4&gt;</arg>&apos; has no legal driver
+<msg type="warning" file="NgdBuild" num="470" delta="old" ><arg fmt="%s" index="1">bidirect</arg> pad net &apos;<arg fmt="%s" index="2">X&lt;4&gt;</arg>&apos; has no legal driver
 </msg>
 
 </messages>
